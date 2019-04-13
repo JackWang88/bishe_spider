@@ -1,0 +1,98 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="/css/main.css" media="all" />
+<title>PhishTank &gt; See all suspected phish submissions</title>
+<script language="JavaScript" type="text/javascript" src="/js/phishtank.js"></script>
+</head>
+<body>
+<div id="opendnsheader">
+PhishTank is operated by <a href="https://www.opendns.com/">OpenDNS</a>,
+a free service that makes your Internet safer, faster, and smarter.
+<a href="https://www.opendns.com/start">Get started today!</a>
+</div>
+<div id="canvas">
+<div id="header">
+<div class="left">
+<h1><a name="top" title="PhishTank - Out of the Net, Into the Tank" href="/"><img src="/images/logo_with_tagline.gif" height="82" alt="PhishTank" border="0" /></a></h1>
+</div>
+<div class="right">
+<form method="POST" action="https://www.phishtank.com/login.php" class="loginbox" autocomplete="off">
+<input type="text" name="username" size="25" onFocus="lbfocus()" value="username" id="username" />
+<input type="password" name="password" size="25" onFocus="lbfocus()" value="password" id="password" />
+<input type="submit" name="Login" value="Sign In" class="loginbutton" />
+<input type="hidden" name="return_to" value="/phish_archive.php?page=3.html">
+</form>
+<a href="/register.php">Register</a> | <a href="/forgot_password.php">Forgot Password</a>
+</div>
+<br class="clr" />
+<div id="nav">
+<ul><li><a href="/index.php">Home</a></li><li><a href="/add_web_phish.php">Add A Phish</a></li><li><a href="/verify_a_phish.php">Verify A Phish</a></li><li class="active"><a href="/phish_archive.php">Phish Search</a></li><li><a href="/stats.php">Stats</a></li><li><a href="/faq.php">FAQ</a></li><li><a href="/developer_info.php">Developers</a></li><li><a href="/mailing_lists.php">Mailing Lists</a></li><li><a href="/account.php">My Account</a></li></ul> <div class="clr"></div>
+</div>
+</div>
+<div id="main">
+<div class="subnavlinks"><ul><li class="active"><a href="phish_archive.php">Phish Archive</a></li><li class="default"><a href="target_search.php">Search by Targeted Brand</a></li><li class="default"><a href="asn_search.php">Search by ASN</a></li></ul></div>
+<div id="widecol">
+<div class="padded">
+<h2>Phish Archive</h2>
+<form method="GET" action="phish_search.php">
+<p>
+Valid? <select name="valid">
+<option>All</option>
+<option value="y">Valid phishes</option>
+<option value="n">Invalid (not phishes)</option>
+<option value="u">Unknown</option>
+</select>&nbsp;&nbsp;&nbsp;
+Online? <select name="active">
+<option>All</option>
+<option value="y">Online</option>
+<option value="n">Offline</option>
+<option value="u">Unknown</option>
+</select>&nbsp;&nbsp;&nbsp;
+<input type="submit" name="Search" value="Search" class="submitbutton" />
+</p>
+</form>
+<table width="100%" cellspacing="0" cellpadding="9" border="0" class="data">
+<tr>
+<th width="7%">ID</th>
+<th width="57%">Phish URL</th>
+<th width="14%">Submitted</th>
+<th width="12%">Valid?</th>
+<th width="10%">Online?</th>
+</tr>
+<tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007224">6007224</a></td><td valign="center" class="value">http://nab.com-update.customer5955930.deviced046331.noblestree.com/n/9...<br /><span class="small">added on Apr 12th 2019 12:10 AM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007223">6007223</a></td><td valign="center" class="value">http://nab.com-update.customer5955930.deviced046331.noblestree.com/n/9...<br /><span class="small">added on Apr 12th 2019 12:10 AM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007222">6007222</a></td><td valign="center" class="value">http://nab.com-update.customer5955930.deviced046331.noblestree.com/n/9...<br /><span class="small">added on Apr 12th 2019 12:10 AM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007221">6007221</a></td><td valign="center" class="value">http://ifranetwork.icu/stored/saved/newpage/account/...<br /><span class="small">added on Apr 12th 2019 12:10 AM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007220">6007220</a></td><td valign="center" class="value">https://www.youtube.com/watch?v=mimGM0zE_Aw<br /><span class="small">added on Apr 12th 2019 12:03 AM</span></td><td valign="center" class="value">by <a href="user.php?username=BFeely">BFeely</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007219">6007219</a></td><td valign="center" class="value">http://segmobiles.com.br/base/pages/index.php<br /><span class="small">added on Apr 12th 2019 12:02 AM</span></td><td valign="center" class="value">by <a href="user.php?username=dms">dms</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007218">6007218</a></td><td valign="center" class="value">http://caixa-adesao.cf/<br /><span class="small">added on Apr 12th 2019 12:02 AM</span></td><td valign="center" class="value">by <a href="user.php?username=dms">dms</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007217">6007217</a></td><td valign="center" class="value">https://boomcases.site/openid/login?openid.ns=http%3A%2F%2Fspecs.openi...<br /><span class="small">added on Apr 12th 2019 12:02 AM</span></td><td valign="center" class="value">by <a href="user.php?username=BFeely">BFeely</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007216">6007216</a></td><td valign="center" class="value">https://demo1.webh24.it/wpimage/prime/query/aspg/index.html...<br /><span class="small">added on Apr 12th 2019 12:01 AM</span></td><td valign="center" class="value">by <a href="user.php?username=soc247">soc247</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007215">6007215</a></td><td valign="center" class="value">https://portalprimebratendimento-net.umbler.net/cliente/acesso/bradesc...<br /><span class="small">added on Apr 11th 2019 11:55 PM</span></td><td valign="center" class="value">by <a href="user.php?username=dms">dms</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007214">6007214</a></td><td valign="center" class="value">http://www.awin1.com/cread.php?awinmid=1134&awinaffid=67546&clickref=D...<br /><span class="small">added on Apr 11th 2019 11:51 PM</span></td><td valign="center" class="value">by <a href="user.php?username=PhishReporter">PhishReporter</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007213">6007213</a></td><td valign="center" class="value">https://portalprimebratendimento-net.umbler.net/cliente/acesso/bradesc...<br /><span class="small">added on Apr 11th 2019 11:47 PM</span></td><td valign="center" class="value">by <a href="user.php?username=dms">dms</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007212">6007212</a></td><td valign="center" class="value">https://brportalprime-cc.umbler.net/suport/acesso/prime/index.php...<br /><span class="small">added on Apr 11th 2019 11:47 PM</span></td><td valign="center" class="value">by <a href="user.php?username=dms">dms</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007211">6007211</a></td><td valign="center" class="value">https://ehsanazizi.in/BOA/bankofamerica.com/surf4.php...<br /><span class="small">added on Apr 11th 2019 11:42 PM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007210">6007210</a></td><td valign="center" class="value">https://ehsanazizi.in/BOA/bankofamerica.com/login.php?cmd=login_submit...<br /><span class="small">added on Apr 11th 2019 11:42 PM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007209">6007209</a></td><td valign="center" class="value">https://ehsanazizi.in/BOA/bankofamerica.com/login.php?cmd=login_submit...<br /><span class="small">added on Apr 11th 2019 11:42 PM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007208">6007208</a></td><td valign="center" class="value">https://ehsanazizi.in/BOA/bankofamerica.com/login.php?cmd=login_submit...<br /><span class="small">added on Apr 11th 2019 11:42 PM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007207">6007207</a></td><td valign="center" class="value">https://nationwideplus.com/<br /><span class="small">added on Apr 11th 2019 11:42 PM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007206">6007206</a></td><td valign="center" class="value">http://nationwideplus.com/<br /><span class="small">added on Apr 11th 2019 11:42 PM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><tr style="background: #ffffff;"><td valign="center" class="value"><a href="phish_detail.php?phish_id=6007205">6007205</a></td><td valign="center" class="value">https://microsofg7iajpl40100gs4.z13.web.core.windows.net/index.htm?c=....<br /><span class="small">added on Apr 11th 2019 11:42 PM</span></td><td valign="center" class="value">by <a href="user.php?username=cleanmx">cleanmx</a></td><td valign="center" class="value">Unknown</td><td valign="center" class="value"><strong>ONLINE</strong></td></tr><td><b><a href="?page=2">&lt; Newer</a></b>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td align="right">&nbsp;<b><a href="?page=4">Older &gt;</a></b></td></tr></table>
+</div>
+</div>
+</div>
+<div id="footer">
+<p>
+<a href="/friends.php">Friends of PhishTank</a> |
+<a href="/terms.php">Terms of Use</a> |
+<a href="/privacy.php">Privacy</a> |
+<a href="/contact.php">Contact</a>
+<br />
+<span style="color:#666;font-size:10px;">
+PhishTank is operated by <a href="https://www.opendns.com/">OpenDNS</a>.
+Learn more about <a href="/about.php">PhishTank</a> or
+<a href="https://www.opendns.com/faq/">OpenDNS</a>.</span>
+</p>
+</div>
+</div>
+<div style="font-size: 6px; color: #bbb; text-align: center;">Server: d8f9d5086be7</div>
+<script type="text/javascript">
+
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-1163522-7']);
+         _gaq.push(['_trackPageview']);
+
+         (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+
+        </script>
+</body>
+</html>
