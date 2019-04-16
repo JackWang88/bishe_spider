@@ -16,30 +16,33 @@ def get_webpage(raw_url, raw_filename, begin, end, timeout):
         full_url = raw_url + str(i) + ".html"
         full_filename = raw_filename + str(i) + ".html"
         file = urllib.request.urlopen(full_url)
-        data = file.read().decode('utf-8')
+        data = file.read().decode('UTF-8')
 
         # 将网页写入文件
-        fileHandle = open(full_filename, 'w', encoding='utf-8')
+        fileHandle = open(full_filename, 'w', encoding='UTF-8')
         fileHandle.write(data)
         fileHandle.close()
         time.sleep(timeout)  # 每次请求后等待timeout秒，减轻服务器压力
     return 0
 
 
-# 爬虫爬取路线
-# # 1.获取全世界的合法网站列表
-# raw_url = "http://alexa.chinaz.com/Global/index_"
-# raw_filename = "./webpage/legal_webpage/global_legal_website_list_"
-# get_webpage(raw_url, raw_filename, 2, 20, 3)
-#
-# # 2.获取中国的合法网站列表
-# raw_url = "http://alexa.chinaz.com/Country/index_CN_"
-# raw_filename = "./webpage/legal_webpage/china_legal_website_list_"
-# get_webpage(raw_url, raw_filename, 2, 20, 3)
+爬虫爬取路线
+# 1.获取全世界的合法网站列表
+raw_url = "http://alexa.chinaz.com/Global/index_"
+raw_filename = "./webpage/legal_webpage/global_legal_website_list_"
+因为全世界的合法网站列表第一个链接为index.html,所以下面的调用从页面2开始
+get_webpage(raw_url, raw_filename, 2, 20, 3)
+
+# 2.获取中国的合法网站列表
+raw_url = "http://alexa.chinaz.com/Country/index_CN_"
+raw_filename = "./webpage/legal_webpage/china_legal_website_list_"
+get_webpage(raw_url, raw_filename, 1, 20, 3)
 
 # 3.获取全世界的钓鱼网站列表
 raw_url = "http://www.phishtank.com/phish_archive.php?page="
 raw_filename = "./webpage/phish_webpage/phish_website_webpage_"
-get_webpage(raw_url, raw_filename, 39, 1000, 10)
+get_webpage(raw_url, raw_filename, 1, 1000, 3)
+
+
 
 
